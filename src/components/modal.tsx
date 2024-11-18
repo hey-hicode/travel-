@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { searchFlights } from '../../service/apiFunctions';
+import { searchFlight } from '../../service/apiFunctions';
 
 const SearchModal: React.FC = () => {
     const [formData, setFormData] = useState <any>({
@@ -28,7 +28,7 @@ const SearchModal: React.FC = () => {
 
   const handleSearch = async () => {
     try {
-      const results = await searchFlights(formData); // Pass form data to the API function
+      const results = await searchFlight(formData); // Pass form data to the API function
       setSearchResults(results);
     } catch (error) {
       console.error('Search failed:', error);
@@ -68,7 +68,7 @@ const SearchModal: React.FC = () => {
             placeholder="Departure Date"
             value={formData.departDate}
             onChange={handleInputChange}
-            className="input w-full p-2 border rounded"
+            className="input w-full p-2 border rounded" 
           />
 
           <input
