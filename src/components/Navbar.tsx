@@ -10,8 +10,15 @@ import {
   PiPlusSquare,
   PiWallet,
 } from "react-icons/pi";
+// import { useFlightStore } from "../slices/useFlightStore";
 
 const Navbar = () => {
+  // const { toggleModal, isModalOpen } = useFlightStore();
+
+  // const handleOpenModal = () => {
+  //   toggleModal(true);
+  //   console.log('Modal State After Clicking:', isModalOpen); // Check if Zustand state changes
+  // };
   const linkGroup1 = [
     {
       title: "Home",
@@ -60,7 +67,9 @@ const Navbar = () => {
         />
         <div className="bg-[#F0F2F5] flex items-center gap-x-3 rounded h-10 px-3 w-[300px]">
           <FiSearch className="text-[#667185]" size={20} />
-          <input type="text" className="bg-transparent" placeholder="Search" />
+          <input type="text" className="bg-transparent"
+          //  onChange={handleOpenModal}
+            placeholder="Search" />
         </div>
       </div>
       <div className="flex items-center">

@@ -14,6 +14,7 @@ import Sidebar from "./components/Sidebar";
 import FlightInfo from "./components/FlightInfo";
 import HotelInfo from "./components/HotelInfo";
 import ActivityInfo from "./components/ActivitiyInfo";
+// import Modal from "./components/modal";
 
 function App() {
   return (
@@ -162,6 +163,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* <Modal /> */}
       </div>
     </>
   );
